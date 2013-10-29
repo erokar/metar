@@ -1,0 +1,6 @@
+source "https://rubygems.org"
+gem "sinatra"
+gem "dm-migrations" 
+gem "thin"
+gem "metar-parser"
+gem "sass"

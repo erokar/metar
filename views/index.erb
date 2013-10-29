@@ -1,0 +1,23 @@
+<br>
+<br>
+<p> Type four letter identifier for airport. Example: ENVA (for Trondheim, Norway).
+<div class="metar-form">
+	Station:
+	<form action="" method="post">
+	    <input name="station" type="text" size="25" />
+	    <br>
+	    <input type="Submit" value="Retrieve" />
+	</form>
+</div>
+
+<br>
+
+<div class="metar">
+	<%= p @parsed %>
+	<br>
+	<br>
+	<%= p @raw %>
+	<dic class="error">
+		<%= @error %>
+	</div>
+</div>

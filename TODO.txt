@@ -1,0 +1,15 @@
+Lage en egen parser tenker jeg, som brukter data herfra: http://weather.noaa.gov/pub/data/observations/metar/decoded/
+
+Der er det også oversatt.
+
+1. Side opp og gå hvor man kan søke på norske flyplasser. Kan bruke metar-gemen til å finne liste over norske flyplasser.
+
+2. Vise metar for valgt flyplass. Hente rett fra noaa
+
+3. Lage egen parser for METAR og presentere i menneskespråk.
+
+4. Samme for TAF.
+
+5. Kunne velge avgangssted og destinasjon.
+
+6. Finne ikoner som viser været.

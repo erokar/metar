@@ -1,0 +1,93 @@
+/*@import url(http://fonts.googleapis.com/css?family=Droid+Serif);*/
+/*@import url(http://fonts.googleapis.com/css?family=Roboto);
+*/
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto Regular'), local('Roboto-Regular'), url(http://themes.googleusercontent.com/static/fonts/roboto/v9/CrYjSnGjrRCn0pd9VQsnFOvvDin1pK8aKteLpeZ5c0A.woff) format('woff');
+}
+
+$red: #903; 
+$black: #444; 
+$white: #fff; 
+$main-font: Roboto, sans-serif;
+
+body { 
+	font-family: $main-font;
+	text-align: center;
+}
+
+h1 {
+	color: $red;
+	font: 32px/1 $main-font;
+}
+
+header h1 { 
+	font-style: italic;
+	font-size: 40px; 
+	line-height: 100px; 
+	background: transparent url(/images/logo.png) 0 0 no-repeat; 
+	background-size: 14%;
+	padding-left: 190px;
+}
+
+@mixin tabs ($background: blue, $color: yellow) { 
+	ul {
+		list-style: none; 
+		margin: 0; 
+		padding: 0; 
+		background: $background; 
+		overflow: hidden;
+	} 
+	li {
+		float: left;
+	} 
+	a{
+		text-decoration: none; 
+		display: block; 
+		padding: 8px; 
+		background: $background; 
+		color: $color;
+		&:hover { 
+			background: darken($background, 20%);
+		}
+	}
+}	
+
+nav { 
+	@include tabs ($background: $black, $color: $white); 
+	font-weight: bold;
+}
+
+p { 
+	font: 18px/1.4 $main-font;
+}
+
+/*input[type=text] {
+
+ 	width: 268px;
+	border-radius: 20;
+	margin-left:auto;
+	margin-right:auto;
+	width:70%;
+
+}*/
+
+.metar-form  {
+	width: 268px;
+	border-radius: 20;
+	margin-left:auto;
+	margin-right:auto;
+	width:70%;
+	text-align: center;
+}
+
+.metar {
+	text-align: center;	
+}
+
+.error {
+	color: red;
+}
+
